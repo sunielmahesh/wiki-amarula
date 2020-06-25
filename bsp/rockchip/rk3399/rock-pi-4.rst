@@ -1,21 +1,19 @@
-ROCKPI-4C
+ROCK-PI-4
 ==========
 
-This tutorial will show the details of Radxa ROCKPI-4C board mainline support.
+This tutorial will show the details of Radxa ROCK-PI-4 mainline support.
 
 Hardware details and wiki `ROCKPI-4C <https://rockpi.org/rockpi4>`_
 
-If incase the board is not displayed on there website, here are the quick specs:
-
-Single HDMI 2.0 port is replaced with a micro HDMI port and a mini DisplayPort, meaning
-two external displays can be connected.
-4GB RAM and a WiFi/Bluetooth module.
-Rest of the specs are same as its predecessor ROCKPI-4B.
+Radxa ROCK-PI-4 series has three board models:
+Model A
+Model B
+Model C
 
 Hardware Access
 ---------------
 
-.. image:: /images/rockpi_4c.jpg
+.. image:: /images/rock_pi_4.jpg
 
 BSP Building
 ------------
@@ -55,7 +53,7 @@ Buildroot
 
 	$ git clone git://git.buildroot.net/buildroot
 	$ cd buildroot
-	$ make rockpi_4c_defconfig
+	$ make rock_pi_4_defconfig
 	$ make
 
 
@@ -113,7 +111,7 @@ Put this micro-SD card onto your board in the slot and power the board. You shou
 	Found /extlinux/extlinux.conf
 	Retrieving file: /extlinux/extlinux.conf
 	156 bytes read in 5 ms (30.3 KiB/s)
-	1:      RK3399_ROCKPI4C linux
+	1:      RK3399_ROCK_PI_4 linux
 	Retrieving file: /Image
 	26288640 bytes read in 1122 ms (22.3 MiB/s)
 	append: earlycon=uart8250,mmio32,0xff1a0000 root=/dev/mmcblk1p4 rw rootwait
@@ -539,7 +537,7 @@ Put this micro-SD card onto your board in the slot and power the board. You shou
 	[    1.182515] Segment Routing with IPv6
 	OK
 
-	Welcome to ROCKPI4C..!!
-	rockpi4c login:
+	Welcome to ROCK_PI_4..!!
+	rockpi4 login:
 
 use root for login. 
